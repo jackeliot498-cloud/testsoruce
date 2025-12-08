@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My Personal Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>我的个人博客</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Blog!</h1>
-    </header>
-    <main>
-        <article>
-            <h2>First Post</h2>
-            <p>This is the content of my first blog post. Stay tuned for more!</p>
-        </article>
-    </main>
-    <script src="script.js"></script>
+  <header class="header container">
+    <h1>我的个人博客</h1>
+    <nav class="navbar">
+      <a href="index.html">首页</a>
+      <a href="admin.html">写文章</a>
+      <a href="https://github.com/jackeliot498-cloud/testsoruce">仓库</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="posts-container">
+      <!-- 博客文章将通过 script.js 动态渲染 -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 我的个人博客</p>
+  </footer>
+
+  <!-- Markdown renderer -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
